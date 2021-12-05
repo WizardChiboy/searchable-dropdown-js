@@ -1,13 +1,19 @@
 body {
-  font: 16px Arial;
+  font: 14px Arial;
+}
+.section-one {
+  justify-content: space-between;
+  width: 20%;
+  margin: 70px 20px;
 }
 
-.section-one {
+.repeating-form {
   display: flex;
   justify-content: space-between;
   width: 80%;
   align-items: center;
   margin: auto;
+  flex-wrap: wrap;
 }
 .autocomplete {
   display: inline-block;
@@ -15,7 +21,7 @@ body {
 
 h4 {
   margin: 0px;
-  font-weight: 300;
+  font-weight: bold;
 }
 
 input {
@@ -23,6 +29,7 @@ input {
   background-color: #f1f1f1;
   padding: 10px;
   font-size: 16px;
+  margin-bottom: 15px;
 }
 
 input[type="date"] {
@@ -39,14 +46,22 @@ input[type="text"] {
   border-radius: 5px;
 }
 
-.autocomplete-items div {
-  padding: 10px;
-  cursor: pointer;
-  background-color: #fff;
-  border-bottom: 1px solid #d4d4d4;
+.repeating-form input[type="text"] {
+  margin-right: -20px;
 }
 
-/*when hovering an item:*/
-.autocomplete-items div:hover {
-  background-color: #e9e9e9;
+.btn-add {
+  background-color: rgb(11, 177, 80);
+  color: white;
+  width: 10%;
+  padding: 10px 3px;
+  border: none;
+}
+
+.btn-rm {
+  border: none;
+  width: 10%;
+  padding: 10px 3px;
+  background-color: tomato;
+  color: white;
 }

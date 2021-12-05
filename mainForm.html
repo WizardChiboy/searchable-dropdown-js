@@ -16,6 +16,11 @@
     <link rel="stylesheet" href="/resources/demos/style.css" />
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/0f83e5d3b7.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="section-one">
@@ -26,23 +31,46 @@
       </div>
 
       <div class="select-agent">
-        <form autocomplete="off">
-          <div class="autocomplete" style="width: 300px">
-            <h4>Select Agent</h4>
-            <input
-              id="myInput"
-              type="text"
-              name="myCountry"
-              placeholder="search..."
-            />
-          </div>
-        </form>
+        <h4>Select Agents</h4>
+        <input type="text" id="select-agents" placeholder="search.." />
       </div>
 
-      <div class="ui-widget">
-        <label for="tags">Tags: </label>
-        <input id="tags" />
+      <div class="select-project">
+        <h4>Select Projects</h4>
+        <input type="text" id="select-projects" placeholder="search.." />
       </div>
+    </div>
+    <div class="checkbox">
+      Apply here
+      <input
+        type="checkbox"
+        name="more"
+        id="more-fields"
+        onclick="myFunction()"
+      />
+    </div>
+
+    <div class="section-two" id="text" style="display: none">
+      <div class="repeating-form">
+        <div class="select-material">
+          <h4>Select material</h4>
+          <input type="text" id="select-material" placeholder="search.." />
+        </div>
+        <div class="avail-qty">
+          <h4>avail.qty:</h4>
+        </div>
+
+        <div class="qty-used">
+          <h4>qty.used:</h4>
+        </div>
+        <div class="select-unit">
+          <h4>unit</h4>
+          <input type="text" id="select-unit" placeholder="search.." />
+        </div>
+
+        <button class="btn-rm">REMOVE</button>
+      </div>
+      <button class="btn-add">ADD</button>
     </div>
   </body>
 
