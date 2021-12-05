@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="./form.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js"
+        integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css"
+        integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
+
+        <link rel="stylesheet" href="style.css">
+
+        
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+   
+    
+    </head>
+<body>
+    
+
+    <div class="main-container">
+
+    <form action="">
+
+        <div class="form-header">
+
+            <!-- date picker -->
+            <div class="form-date">
+
+                <input type="date" id="birthday" name="birthday">
+
+            </div>
+            <!--  searchable  -->
+            <div class="form-select-agent">
+
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Select Agent</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                    <a href="#about">About</a>
+                    <a href="#base">Base</a>
+                    <a href="#blog">Blog</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#custom">Custom</a>
+                    <a href="#support">Support</a>
+                    <a href="#tools">Tools</a>
+                </div>
+            </div>
+            </div>
+
+
+            <!--  searchable  -->
+            <div class="form-select-area">
+            
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Select Project Area</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                    <a href="#about">About</a>
+                    <a href="#base">Base</a>
+                    <a href="#blog">Blog</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#custom">Custom</a>
+                    <a href="#support">Support</a>
+                    <a href="#tools">Tools</a>
+                </div>
+            </div>
+            </div>
+
+
+
+        </div>
+
+        
+        <!-- repeatable form field -->
+
+        <div class="container">
+        
+            <div class="row">
+                    <div id="myRepeatingFields">
+                        <div class="entry input-group col-xs-3">
+                            <input class="" name="fields[]" type="text"  />
+
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-success btn-sm btn-add"> ADD
+                            </span>
+                        </div>
+                    </div>
+        
+        
+            </div>
+        </div>
+
+        <!-- quantity used -->
+
+        Quantity used <input class = "counter" type="number" id="num_counter"  value="0">
+        <span class="counter">
+            <button  type = "button" onclick="addFunction()"><b>+</b></button>
+            <button  type = "button" onclick="subFunction()"><b>-</b></button>
+        </span>
+
+
+       
+
+        </form>
+
+       
+
+   
+        
+        <script src="./form.js"> 
+</script>
+
+    </div>
+
+    
+</body>
+</html>

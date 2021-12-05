@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="./form.js"></script>
+
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js"
+        integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css"
+        integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
+    
+    
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/0f83e5d3b7.js" crossorigin="anonymous"></script>
+
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="main-container">
+
+    <form >
+    <div class="form-header">
+        <!-- date picker -->
+        <div class="form-date">
+        
+            <input type="date" id="" name="">
+        
+        </div>
+        <!--  searchable  -->
+        <div class="form-select-agent">
+        
+        <div class="dropdown">
+            <button type="button" onclick="saFunction()" class="dropbtn">Select Agent <i class="fas fa-caret-down"></i> </button>
+            <div id="saDropdown" class="dropdown-content">
+                <input type="text" placeholder="Search.." id="saInput" onkeyup="saFilterFunction()">
+                <a href="#about">About</a>
+                <a href="#base">Base</a>
+                <a href="#blog">Blog</a>
+                <a href="#contact">Contact</a>
+                <a href="#custom">Custom</a>
+                <a href="#support">Support</a>
+                <a href="#tools">Tools</a>
+            </div>
+        </div>
+
+        </div>
+        
+        
+        <!--  searchable  -->
+        <div class="form-select-area">
+        
+            <div class="dropdown">
+                <button   type="button" onclick="paFunction()" class="dropbtn">Select Project Area <i class="fas fa-caret-down"></i></button>
+                <div id="paDropdown" class="dropdown-content">
+                    <input type="text" placeholder="Search.." id="paInput" onkeyup="paFilterFunction()">
+                    <a href="#about">About</a>
+                    <a href="#base">Base</a>
+                    <a href="#blog">Blog</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#custom">Custom</a>
+                    <a href="#support">Support</a>
+                    <a href="#tools">Tools</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="myRepeatingFields">
+        <div class="entry input-group ">
+            <div class="form-section-two">
+
+        <div class="form-select-material">
+
+            <div class="dropdown">
+                <button  type="button" onclick="smFunction()" class="dropbtn">Select Material <i class="fas fa-caret-down"></i></button>
+                <div id="smDropdown" class="dropdown-content">
+                    <input type="text" placeholder="Search.." id="smInput" onkeyup="smFilterFunction()">
+                    <a href="#about">About</a>
+                    <a href="#base">Base</a>
+                    <a href="#blog">Blog</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#custom">Custom</a>
+                    <a href="#support">Support</a>
+                    <a href="#tools">Tools</a>
+                </div>
+            </div>
+            </div>
+
+            <div class="form-avil-qty">
+                Available Quantity  <span id="avail-qty"></span>
+            </div>
+            <div class="form-qty-used">
+                Quantity used <span id="qty-used"></span>
+                
+            </div>
+    
+            <div class="form-unit">
+    
+                <div class="dropdown">
+                    <button  type="button" onclick="fuFunction()" class="dropbtn"> Unit <i class="fas fa-caret-down"></i></button>
+                    <div id="fuDropdown" class="dropdown-content">
+                        <input type="text" placeholder="Search.." id="fuInput" onkeyup="fuFilterFunction()">
+                        <a href="#about">About</a>
+                        <a href="#base">Base</a>
+                        <a href="#blog">Blog</a>
+                        <a href="#contact">Contact</a>
+                        <a href="#custom">Custom</a>
+                        <a href="#support">Support</a>
+                        <a href="#tools">Tools</a>
+                    </div>
+                </div>
+                </div>
+    
+            </div>
+
+            <div class="row">
+                
+                       
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-success btn-md btn-add">
+                                Add
+                            </button>
+                        </span>
+                    </div>
+                </div>
+                <br>
+            </div>
+   
+        </div>
+
+
+
+    </div>
+    </form>
+</div>
+   
+  
+<script src="./form.js">
+    
+</script>
+
+    
+</body>
+</html>

@@ -1,0 +1,99 @@
+form {
+  width: 20%;
+}
+
+.dropbtn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width: 20px;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #3e8e41;
+}
+
+#myInput {
+  box-sizing: border-box;
+  background-image: url("searchicon.png");
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {
+  outline: 3px solid #ddd;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+.entry:not(:first-of-type) {
+  margin-top: 10px;
+}
+
+.glyphicon {
+  font-size: 12px;
+}
+
+input {
+  height: 30px;
+  border: 1px solid rgb(179, 176, 176);
+}
+
+.btn-success,
+.btn-danger {
+  outline: none !important;
+}
+
+.counter {
+  width: 30%;
+}
+
+.form-header {
+  display: flex;
+  border-bottom: 1px solid rgb(194, 191, 191);
+  width: 100%;
+  justify-content: space-between;
+  background-color: indigo;
+}
+
+.main-container {
+  width: 100%;
+  margin: auto;
+  background-color: rgb(132, 84, 167);
+}
